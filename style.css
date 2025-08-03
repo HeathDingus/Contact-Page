@@ -1,0 +1,63 @@
+body {
+  background-color:#36454F;
+}
+
+* {
+  text-decoration:none;
+}
+
+.navbar {
+  background-color:#003153;
+  font-family:'orbitron';
+  padding-right:15px;
+  padding-left:15px;
+}
+
+.navdiv {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.name {
+  color:white;
+  font-size:25px;
+}
+
+li {
+  list-style:none;
+  display:inline-block;
+}
+
+li a {
+  color:white;
+  margin:15px;
+  font-size:20px;
+}
+
+li a:hover {
+  color:#36454F;
+}
+
+form {
+  margin-top:5%;
+  text-align:center;
+}
+
+label {
+  color:white;
+  font-family:'orbitron';
+}
+
+input, textarea {
+  font-family:'orbitron';
+  background-color:gray;
+  color:#003153;
+}
+.submit {
+  color:white;
+}
+
+.submit:hover {
+  color:#003153;
+}
