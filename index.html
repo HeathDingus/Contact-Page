@@ -42,6 +42,33 @@
       <textarea name'Comment' rows=5 columns=10></textarea><br>
       <input class='submit' type='submit' id='submit' name='submit'>
     </form>
+
+      <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwZHEjOjXNWoEZXjmMAol7iyGVciEj3G5lztcAaN3SGQmKBG98VjA_JAGwxs6g2jJyUQQ/exec';
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+
+      const data = {
+        fname: form.fname.value,
+        lname: form.lname.value,
+        Email: form.Email.value,
+        Phone: form.Phone.value,
+        Comment: form.Comment.value
+      };
+
+      fetch(scriptURL, {
+        method: 'POST',
+        body: JSON.stringify(data)
+      })
+      .then(res => {
+        alert("Form submitted successfully!");
+        form.reset();
+      })
+      .catch(err => alert("Error submitting form."));
+    });
+  </script>
 <!-- partial -->
   
 </body>
