@@ -29,7 +29,7 @@
         </div>
       </nav>
    
-    <form action='#'>
+    <form id='contactForm'>
       <label for='fname'>First Name</label><br>
       <input type='text' id='fname' name='fname' required><br>
       <label for='lname'>Last Name</label><br>
@@ -37,9 +37,9 @@
       <label for='Email'>Email</label><br>
       <input type='email' id='Email' name='Email' required><br>
       <label for='Phone'>Phone #</label><br>
-      <input type='tel' id='Phone' name='Phone' required><br>
+      <input type='tel' id='Phone' name='Phone' pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}' required><br>
       <label for='Comment'>Comment</label><br>
-      <textarea name'Comment' rows=5 columns=10></textarea><br>
+      <textarea name='Comment' rows=5 cols=10></textarea><br>
       <input class='submit' type='submit' id='submit' name='submit'>
     </form>
 
